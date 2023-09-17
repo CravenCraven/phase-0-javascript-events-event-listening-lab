@@ -1,12 +1,9 @@
 function addingEventListener() {
 }
-const element = document.getElementById('myElement');
-function handleEvent(event) {
-    console.log('Event was triggered:', event.type);
+const input = document.getElementById('button');
+
+function clickAlert(clickAlert) {
+  alert('I was clicked!');
 }
-element.addEventListener('click', handleEvent);
-const button = document.getElementById('myButton');
-function handleClick() {
-    alert('Button Clicked!');
-}
-button.addEventListener('click', handleClick);
+
+input.addEventListener('click', clickAlert);
